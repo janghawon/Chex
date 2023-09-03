@@ -7,7 +7,7 @@ public class Pawn : WareBase
 {
     private bool isFirst = true;
 
-    public override void SelectThisWare()
+    public override void LookCanMoveBlock()
     {
         int max = 1;
         if (isFirst)

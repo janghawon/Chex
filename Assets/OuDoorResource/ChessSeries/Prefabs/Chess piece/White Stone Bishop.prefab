@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4284081012928950}
   - component: {fileID: 33189101377955106}
   - component: {fileID: 23990914731952994}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Bishop_Element_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,6 +62,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 5863acfd08e87b14a92b98067d7164b0, type: 2}
+  - {fileID: 2100000, guid: 5863acfd08e87b14a92b98067d7164b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,7 +95,7 @@ GameObject:
   - component: {fileID: 4864252348842882}
   - component: {fileID: 33086908348491390}
   - component: {fileID: 23111197810966748}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Bishop_Element_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,6 +146,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 5863acfd08e87b14a92b98067d7164b0, type: 2}
+  - {fileID: 2100000, guid: 5863acfd08e87b14a92b98067d7164b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -177,7 +179,7 @@ GameObject:
   - component: {fileID: 4336620037197312}
   - component: {fileID: 33140465882314450}
   - component: {fileID: 23894886990963584}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Bishop_Element_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,6 +230,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 5863acfd08e87b14a92b98067d7164b0, type: 2}
+  - {fileID: 2100000, guid: 5863acfd08e87b14a92b98067d7164b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -258,7 +261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4323368450248646}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: White Stone Bishop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +302,7 @@ GameObject:
   - component: {fileID: 4847900753803984}
   - component: {fileID: 33448969218488592}
   - component: {fileID: 23286942465696184}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Bishop_Element_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,6 +353,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 5863acfd08e87b14a92b98067d7164b0, type: 2}
+  - {fileID: 2100000, guid: 5863acfd08e87b14a92b98067d7164b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -382,7 +386,7 @@ GameObject:
   - component: {fileID: 4399110606022548}
   - component: {fileID: 33246877113255922}
   - component: {fileID: 23123843488377676}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Bishop_Element_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -433,6 +437,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 5863acfd08e87b14a92b98067d7164b0, type: 2}
+  - {fileID: 2100000, guid: 5863acfd08e87b14a92b98067d7164b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -465,7 +470,7 @@ GameObject:
   - component: {fileID: 4284932243300132}
   - component: {fileID: 33940592380587100}
   - component: {fileID: 23665817198538766}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Bishop_Element_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -516,6 +521,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 5863acfd08e87b14a92b98067d7164b0, type: 2}
+  - {fileID: 2100000, guid: 5863acfd08e87b14a92b98067d7164b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -548,7 +554,7 @@ GameObject:
   - component: {fileID: 4379197850359922}
   - component: {fileID: 33198972675045588}
   - component: {fileID: 23746766649314068}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Bishop_Element_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -599,6 +605,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 5863acfd08e87b14a92b98067d7164b0, type: 2}
+  - {fileID: 2100000, guid: 5863acfd08e87b14a92b98067d7164b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -631,7 +638,7 @@ GameObject:
   - component: {fileID: 4830114631701172}
   - component: {fileID: 33008574081641620}
   - component: {fileID: 23411676016660884}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Bishop_Element_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -681,6 +688,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+  - {fileID: 2100000, guid: 5863acfd08e87b14a92b98067d7164b0, type: 2}
   - {fileID: 2100000, guid: 5863acfd08e87b14a92b98067d7164b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0

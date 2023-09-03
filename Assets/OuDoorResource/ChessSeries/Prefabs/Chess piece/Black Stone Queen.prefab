@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4503905264601916}
   - component: {fileID: 33910351682502838}
   - component: {fileID: 23883261789739792}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Queen_Element_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,6 +62,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
+  - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,7 +95,7 @@ GameObject:
   - component: {fileID: 4045182420752174}
   - component: {fileID: 33649806781098772}
   - component: {fileID: 23716295314711494}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Queen_Element_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,6 +146,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
+  - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -177,7 +179,7 @@ GameObject:
   - component: {fileID: 4914895372156308}
   - component: {fileID: 33044034131415924}
   - component: {fileID: 23422130097702318}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Queen_Element_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,6 +230,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
+  - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -260,7 +263,7 @@ GameObject:
   - component: {fileID: 4293203555678604}
   - component: {fileID: 33146782837423486}
   - component: {fileID: 23534320062872750}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Queen_Element_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,6 +314,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
+  - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -343,7 +347,7 @@ GameObject:
   - component: {fileID: 4937878139351326}
   - component: {fileID: 33973113751251958}
   - component: {fileID: 23554423439165042}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Queen_Element_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -394,6 +398,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
+  - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -424,7 +429,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4042713662253092}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Black Stone Queen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +473,7 @@ GameObject:
   - component: {fileID: 4747890002005912}
   - component: {fileID: 33889958061641348}
   - component: {fileID: 23892601369938166}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Queen_Element_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -519,6 +524,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
+  - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -551,7 +557,7 @@ GameObject:
   - component: {fileID: 4477259337516142}
   - component: {fileID: 33085873824433976}
   - component: {fileID: 23439768231615108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Queen_Element_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -602,6 +608,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
+  - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -634,7 +641,7 @@ GameObject:
   - component: {fileID: 4137951775510210}
   - component: {fileID: 33948735661958836}
   - component: {fileID: 23265777361364280}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Queen_Element_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -685,6 +692,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
+  - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -717,7 +725,7 @@ GameObject:
   - component: {fileID: 4502426458623664}
   - component: {fileID: 33456081116982982}
   - component: {fileID: 23180699072907322}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Queen_Element_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -768,6 +776,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
+  - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -800,7 +809,7 @@ GameObject:
   - component: {fileID: 4700554495744762}
   - component: {fileID: 33842439096020712}
   - component: {fileID: 23531339231749498}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Queen_Element_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -851,6 +860,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
+  - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -883,7 +893,7 @@ GameObject:
   - component: {fileID: 4601424677061998}
   - component: {fileID: 33630020498539166}
   - component: {fileID: 23991352019695984}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Queen_Element_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -933,6 +943,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+  - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
   - {fileID: 2100000, guid: 6f5307ecd56f13649863bee010c3d586, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0

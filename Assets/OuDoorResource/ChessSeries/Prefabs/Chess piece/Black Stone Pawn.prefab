@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4701400153085044}
   - component: {fileID: 33983608241729236}
   - component: {fileID: 23671983846325142}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Pawn_Element_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,6 +62,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 8cb80f9e8daf7dc4b944bac0d8071caf, type: 2}
+  - {fileID: 2100000, guid: 8cb80f9e8daf7dc4b944bac0d8071caf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,7 +95,7 @@ GameObject:
   - component: {fileID: 4569931270377422}
   - component: {fileID: 33743403353634526}
   - component: {fileID: 23087423706236026}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Pawn_Element_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,6 +146,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 8cb80f9e8daf7dc4b944bac0d8071caf, type: 2}
+  - {fileID: 2100000, guid: 8cb80f9e8daf7dc4b944bac0d8071caf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -175,7 +177,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4499817239284372}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Black Stone Pawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +217,7 @@ GameObject:
   - component: {fileID: 4412605794505416}
   - component: {fileID: 33905457685532184}
   - component: {fileID: 23254244218997414}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Pawn_Element_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,6 +268,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 8cb80f9e8daf7dc4b944bac0d8071caf, type: 2}
+  - {fileID: 2100000, guid: 8cb80f9e8daf7dc4b944bac0d8071caf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -298,7 +301,7 @@ GameObject:
   - component: {fileID: 4355660334520118}
   - component: {fileID: 33692929117403840}
   - component: {fileID: 23804577396938862}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Pawn_Element_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,6 +352,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 8cb80f9e8daf7dc4b944bac0d8071caf, type: 2}
+  - {fileID: 2100000, guid: 8cb80f9e8daf7dc4b944bac0d8071caf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -381,7 +385,7 @@ GameObject:
   - component: {fileID: 4525874905914160}
   - component: {fileID: 33027285627812444}
   - component: {fileID: 23920287171287108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Pawn_Element_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -432,6 +436,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 8cb80f9e8daf7dc4b944bac0d8071caf, type: 2}
+  - {fileID: 2100000, guid: 8cb80f9e8daf7dc4b944bac0d8071caf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -464,7 +469,7 @@ GameObject:
   - component: {fileID: 4944122501896992}
   - component: {fileID: 33681090215400834}
   - component: {fileID: 23327162481883830}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Pawn_Element_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -515,6 +520,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 8cb80f9e8daf7dc4b944bac0d8071caf, type: 2}
+  - {fileID: 2100000, guid: 8cb80f9e8daf7dc4b944bac0d8071caf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -547,7 +553,7 @@ GameObject:
   - component: {fileID: 4869975598968706}
   - component: {fileID: 33349976985842842}
   - component: {fileID: 23378745653566200}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Pawn_Element_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -597,6 +603,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+  - {fileID: 2100000, guid: 8cb80f9e8daf7dc4b944bac0d8071caf, type: 2}
   - {fileID: 2100000, guid: 8cb80f9e8daf7dc4b944bac0d8071caf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0

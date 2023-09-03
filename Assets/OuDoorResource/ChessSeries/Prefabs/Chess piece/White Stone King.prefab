@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4698882720568256}
   - component: {fileID: 33464751784195898}
   - component: {fileID: 23300636969517114}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_King_Element_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,6 +62,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 65450fdfae7b9114582968b07eedc358, type: 2}
+  - {fileID: 2100000, guid: 65450fdfae7b9114582968b07eedc358, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,7 +95,7 @@ GameObject:
   - component: {fileID: 4702700506318612}
   - component: {fileID: 33920522866654526}
   - component: {fileID: 23960834208136900}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_King_Element_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,6 +146,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 65450fdfae7b9114582968b07eedc358, type: 2}
+  - {fileID: 2100000, guid: 65450fdfae7b9114582968b07eedc358, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -177,7 +179,7 @@ GameObject:
   - component: {fileID: 4226446067505928}
   - component: {fileID: 33523223040728184}
   - component: {fileID: 23913819082039126}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_King_Element_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,6 +230,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 65450fdfae7b9114582968b07eedc358, type: 2}
+  - {fileID: 2100000, guid: 65450fdfae7b9114582968b07eedc358, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -258,7 +261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4595559095916412}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: White Stone King
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300,7 +303,7 @@ GameObject:
   - component: {fileID: 4281086502139862}
   - component: {fileID: 33472846168308222}
   - component: {fileID: 23012888972745432}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_King_Element_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -351,6 +354,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 65450fdfae7b9114582968b07eedc358, type: 2}
+  - {fileID: 2100000, guid: 65450fdfae7b9114582968b07eedc358, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -383,7 +387,7 @@ GameObject:
   - component: {fileID: 4464133492318630}
   - component: {fileID: 33894874254755492}
   - component: {fileID: 23827845115298630}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_King_Element_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,6 +438,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 65450fdfae7b9114582968b07eedc358, type: 2}
+  - {fileID: 2100000, guid: 65450fdfae7b9114582968b07eedc358, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -466,7 +471,7 @@ GameObject:
   - component: {fileID: 4622484540392410}
   - component: {fileID: 33658411896381456}
   - component: {fileID: 23692916387267466}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_King_Element_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -517,6 +522,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 65450fdfae7b9114582968b07eedc358, type: 2}
+  - {fileID: 2100000, guid: 65450fdfae7b9114582968b07eedc358, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -549,7 +555,7 @@ GameObject:
   - component: {fileID: 4729956626547164}
   - component: {fileID: 33857741750358172}
   - component: {fileID: 23207477928719108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_King_Element_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -600,6 +606,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 65450fdfae7b9114582968b07eedc358, type: 2}
+  - {fileID: 2100000, guid: 65450fdfae7b9114582968b07eedc358, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -632,7 +639,7 @@ GameObject:
   - component: {fileID: 4191912833493542}
   - component: {fileID: 33595342101736718}
   - component: {fileID: 23578609394194662}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_King_Element_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -683,6 +690,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 65450fdfae7b9114582968b07eedc358, type: 2}
+  - {fileID: 2100000, guid: 65450fdfae7b9114582968b07eedc358, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -715,7 +723,7 @@ GameObject:
   - component: {fileID: 4340904553917956}
   - component: {fileID: 33263910707367714}
   - component: {fileID: 23262770394979968}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_King_Element_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -765,6 +773,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+  - {fileID: 2100000, guid: 65450fdfae7b9114582968b07eedc358, type: 2}
   - {fileID: 2100000, guid: 65450fdfae7b9114582968b07eedc358, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
