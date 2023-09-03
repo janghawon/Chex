@@ -1,5 +1,6 @@
 
 
+
 public enum WareType
 {
     pawn = 0,
