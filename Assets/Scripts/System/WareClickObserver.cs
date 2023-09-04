@@ -23,8 +23,7 @@ public class WareClickObserver : MonoBehaviour
             {
                 if(hit.collider.gameObject.TryGetComponent<WareBase>(out WareBase wb))
                 {
-                    Debug.Log(1);
-                    wb.ClickThisWareEvent?.Invoke();
+                    wb.ClickEvent();
                 }
             }
         }

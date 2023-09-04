@@ -261,6 +261,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4964487031023218}
+  - component: {fileID: 808825960564318716}
+  - component: {fileID: 9197552335821265131}
   m_Layer: 6
   m_Name: Black Stone Bishop
   m_TagString: Untagged
@@ -291,6 +293,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &808825960564318716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239270685352430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 644cc859d9d8b104b841980848af6600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentPos: 
+  _wareType: 3
+  _isBlack: 0
+  _mapMarkPrefab: {fileID: 0}
+  _activeMatArr:
+  - {fileID: 0}
+  - {fileID: 0}
+  _removeMatArr:
+  - {fileID: 0}
+  - {fileID: 0}
+  _mMarkList: []
+--- !u!65 &9197552335821265131
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239270685352430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2, y: 2.7769392, z: 1.2}
+  m_Center: {x: 0, y: 1.3591658, z: 0}
 --- !u!1 &1474080326116580
 GameObject:
   m_ObjectHideFlags: 0

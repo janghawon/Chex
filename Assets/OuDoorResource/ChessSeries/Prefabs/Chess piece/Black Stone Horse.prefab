@@ -345,6 +345,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4505852727375384}
+  - component: {fileID: 6645203275041642683}
+  - component: {fileID: 3323498743542439298}
   m_Layer: 6
   m_Name: Black Stone Horse
   m_TagString: Untagged
@@ -359,7 +361,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564033256009494}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5, y: 1.88, z: 0.5}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
@@ -373,6 +375,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6645203275041642683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564033256009494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f800f22096207745bf1bce62a0d1cac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentPos: 
+  _wareType: 1
+  _isBlack: 1
+  _mapMarkPrefab: {fileID: 6996546767221282999, guid: 4589cda47bb38a34e9ff985d90306037, type: 3}
+  _activeMatArr:
+  - {fileID: 2100000, guid: 5f3f75b0de9e7b7489c4514770c6e4f1, type: 2}
+  - {fileID: 2100000, guid: 47ccc556e60c1af4ca71ee3df78fdbec, type: 2}
+  _removeMatArr:
+  - {fileID: 2100000, guid: 5f3f75b0de9e7b7489c4514770c6e4f1, type: 2}
+  - {fileID: 0}
+  _mMarkList: []
+--- !u!65 &3323498743542439298
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564033256009494}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2, y: 2.12377, z: 1.2}
+  m_Center: {x: 0, y: 1.0325811, z: 0}
 --- !u!1 &1571599614973920
 GameObject:
   m_ObjectHideFlags: 0

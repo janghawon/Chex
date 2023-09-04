@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
+using DG.Tweening;
 
 public class Pawn : WareBase
 {
@@ -20,7 +20,9 @@ public class Pawn : WareBase
             Transform selectTrm =
             MapManager.Instance.MapDataParent.Find($"{_currentPos[0]}{mark + i + 1}");
             GameObject mm = Instantiate(_mapMarkPrefab);
-            mm.transform.position = new Vector3(selectTrm.position.x, 9.5f, selectTrm.position.z);
+            _mMarkList.Add(mm);
+            mm.transform.position = new Vector3(transform.position.x, 9.5f, transform.position.z);
+            mm.transform.DOMove(new Vector3(selectTrm.position.x, 9.5f, selectTrm.position.z), 0.3f);
         }
     }
 }
