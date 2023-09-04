@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 1145435875558384375}
   - component: {fileID: 1054274364512089159}
   - component: {fileID: 4932695094362244270}
-  m_Layer: 0
+  - component: {fileID: -823724121421463183}
+  m_Layer: 7
   m_Name: BlockMark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,3 +99,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &-823724121421463183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6996546767221282999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7390554889900b040a51f1f7fa3b617b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MarkingID: 

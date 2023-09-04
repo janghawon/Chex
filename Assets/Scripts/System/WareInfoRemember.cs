@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WareCollocater : MonoBehaviour
+public class WareInfoRemember : MonoBehaviour
 {
     [SerializeField] private GameObject _wsbPrefabs;
     WareSelectionBtn _wareSelectionBtn;
@@ -10,16 +10,11 @@ public class WareCollocater : MonoBehaviour
     #region 기물 정보 저장
 
     [Header("기물 정보")]
-    private WareType _wType;
-    public WareType WType => _wType;
-    
-    private bool _isBlack;
-    public bool IsBlack => _isBlack;
+    public GameObject SelectWareInfo;
 
     public void SelectWare(WareType _wt, bool isBlack)
     {
-        _wType = _wt;
-        _isBlack = isBlack;
+        SelectWareInfo = !isBlack ? WareManager.Instance.WarePrefabs[(int)_wt] : WareManager.Instance.WarePrefabs[(int)_wt + 6];
     }
     #endregion
 
@@ -39,9 +34,12 @@ public class WareCollocater : MonoBehaviour
             }
             else
             {
-                _wareSelectionBtn.WType = (WareType)i - 5;
+                _wareSelectionBtn.WType = (WareType)i - 6;
                 _wareSelectionBtn.IsBlack = true;
             }
+            _wareSelectionBtn.name = $"{(WareType)i} SelectionBtn";
+            _wareSelectionBtn.SettingValue();
         }
+        UIManager.Instance.ActiveSelectionGroup(false);
     }
 }

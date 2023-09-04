@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class WareClickObserver : MonoBehaviour
 {
-    [SerializeField] private LayerMask _wareMask;
+    public string SelectID;
+    public bool IsMoveWare;
     private Camera _mainCam;
 
     private void Awake()
@@ -24,6 +25,15 @@ public class WareClickObserver : MonoBehaviour
                 if(hit.collider.gameObject.TryGetComponent<WareBase>(out WareBase wb))
                 {
                     wb.ClickEvent();
+                }
+            }
+
+            if(Physics.Raycast(ray, out hit))
+            {
+                if(hit.collider.gameObject.TryGetComponent<BlockMark>(out BlockMark bm))
+                {
+                    SelectID = bm.MarkingID;
+                    bm.MarkCickEvent?.Invoke();
                 }
             }
         }

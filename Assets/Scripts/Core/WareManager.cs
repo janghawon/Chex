@@ -18,6 +18,4 @@ public class WareManager : ObjectManager
         GameObject selectWare = Instantiate(isBlack ? WarePrefabs[(int)wType] : WarePrefabs[(int)wType + 6]);
         selectWare.transform.position = mPos.position;
     }
-
-    
 }

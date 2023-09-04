@@ -2,25 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using DG.Tweening;
 
 public abstract class WareBase : MonoBehaviour
 {
+    private WareClickObserver _wareClickObserver;
     protected bool isSelected;
     public string _currentPos;
     [SerializeField] protected WareType _wareType;
     [SerializeField] protected bool _isBlack;
-    [SerializeField] protected GameObject _mapMarkPrefab;
+    protected BlockMarkSpawner _blockMarkSpawner;
 
     protected string _mapMarkCharData = "ABCDEFGH";
     protected int[] _mapMarkIntData = { 1, 2, 3, 4, 5, 6, 7, 8 };
 
     [SerializeField] private Material[] _activeMatArr = new Material[2];
     [SerializeField] private Material[] _removeMatArr = new Material[2];
-    [SerializeField] protected List<GameObject> _mMarkList = new List<GameObject>();
 
     public UnityAction ClickThisWareActiveEvent;
     public UnityAction ClickThisWareRemoveEvent;
+
+    private void Awake()
+    {
+        _blockMarkSpawner = GameObject.Find("BlockMarkSpawner").GetComponent<BlockMarkSpawner>();
+        _wareClickObserver = GameObject.Find("WareClickObserver").GetComponent<WareClickObserver>();
+    }
 
     private void Start()
     {
@@ -39,6 +44,7 @@ public abstract class WareBase : MonoBehaviour
             ClickThisWareRemoveEvent?.Invoke();
 
         isSelected = !isSelected;
+        _wareClickObserver.IsMoveWare = true;
     }
 
     public void LookOutLine(bool isRemove)
@@ -49,18 +55,12 @@ public abstract class WareBase : MonoBehaviour
             _selectMR = (MeshRenderer)transform.GetChild(i).GetComponent("MeshRenderer");
             _selectMR.materials = isRemove ? _removeMatArr : _activeMatArr;
         }
+
     }
     public abstract void LookCanMoveBlock();
 
     private void RemoveCanMoveBlock()
     {
-        int max = _mMarkList.Count;
-        for(int i = 0; i < max; i++)
-        {
-            GameObject selectMM = _mMarkList[0];
-            _mMarkList.Remove(_mMarkList[0]);
-            selectMM.transform.DOMove(new Vector3(transform.position.x, 9.5f, transform.position.z), 0.3f);
-            Destroy(selectMM, 0.3f);
-        }
+        _blockMarkSpawner.RemoveCanMoveBlockMark(transform.position);
     }
 }

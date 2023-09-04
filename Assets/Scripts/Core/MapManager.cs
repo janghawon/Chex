@@ -9,7 +9,7 @@ public class MapManager : ObjectManager
     private string _mapMarkIntData = "12345678";
 
     public Transform MapDataParent;
-    private Dictionary<string, Transform> _mapDatas = new Dictionary<string, Transform>();
+    public Dictionary<string, Transform> MapDatas = new Dictionary<string, Transform>();
 
     public override void SetInstance()
     {
@@ -25,7 +25,7 @@ public class MapManager : ObjectManager
             for(int j = 0; j < _mapMarkIntData.Length; j++)
             {
                 selectMapData = MapDataParent.transform.Find($"{_mapMarkCharData[i]}{_mapMarkIntData[j]}");
-                _mapDatas.Add(selectMapData.name, selectMapData);
+                MapDatas.Add(selectMapData.name, selectMapData);
             }
         }    
     }
