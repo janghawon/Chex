@@ -23,7 +23,7 @@ public class WareSelectionBtn : MonoBehaviour
         GameObject wcm = GameObject.Find("WareCollocateMaster");
         RangeSelecter rs = wcm.GetComponent<RangeSelecter>();
         WareInfoRemember wc = wcm.GetComponent<WareInfoRemember>();
-        WareClickObserver wo = GameObject.Find("WareClickObserver").GetComponent<WareClickObserver>();
+        ClickObserver wo = GameObject.Find("WareClickObserver").GetComponent<ClickObserver>();
 
         rs.DetectRange();
         wc.SelectWare(WType, IsBlack);

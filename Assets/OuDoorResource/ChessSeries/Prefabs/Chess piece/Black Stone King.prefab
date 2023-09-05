@@ -363,7 +363,7 @@ Transform:
   m_GameObject: {fileID: 1538407554156714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: 1.88, z: 0.5}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4913593567309664}
@@ -390,17 +390,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d588bf3226fe224d8db88ca00500f5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentPos: 
+  isSelected: 0
+  CurrentPos: 
   _wareType: 0
   _isBlack: 1
-  _mapMarkPrefab: {fileID: 6996546767221282999, guid: 4589cda47bb38a34e9ff985d90306037, type: 3}
   _activeMatArr:
   - {fileID: 2100000, guid: 68d4e056fdf83944ea25674e32a844e6, type: 2}
   - {fileID: 2100000, guid: 47ccc556e60c1af4ca71ee3df78fdbec, type: 2}
   _removeMatArr:
   - {fileID: 2100000, guid: 68d4e056fdf83944ea25674e32a844e6, type: 2}
   - {fileID: 0}
-  _mMarkList: []
 --- !u!65 &4414063850306743671
 BoxCollider:
   m_ObjectHideFlags: 0

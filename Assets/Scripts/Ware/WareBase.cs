@@ -5,9 +5,9 @@ using UnityEngine.Events;
 
 public abstract class WareBase : MonoBehaviour
 {
-    private WareClickObserver _wareClickObserver;
-    protected bool isSelected;
-    public string _currentPos;
+    private ClickObserver _wareClickObserver;
+    public bool isSelected;
+    public string CurrentPos;
     [SerializeField] protected WareType _wareType;
     [SerializeField] protected bool _isBlack;
     protected BlockMarkSpawner _blockMarkSpawner;
@@ -24,7 +24,7 @@ public abstract class WareBase : MonoBehaviour
     private void Awake()
     {
         _blockMarkSpawner = GameObject.Find("BlockMarkSpawner").GetComponent<BlockMarkSpawner>();
-        _wareClickObserver = GameObject.Find("WareClickObserver").GetComponent<WareClickObserver>();
+        _wareClickObserver = GameObject.Find("WareClickObserver").GetComponent<ClickObserver>();
     }
 
     private void Start()

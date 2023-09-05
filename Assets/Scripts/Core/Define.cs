@@ -1,6 +1,4 @@
 
-
-
 public enum WareType
 {
     pawn = 0,
@@ -11,5 +9,8 @@ public enum WareType
     king = 5
 }
 
-
+public enum FXType
+{
+    dust = 0
+}
 

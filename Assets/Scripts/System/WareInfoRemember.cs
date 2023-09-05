@@ -10,11 +10,13 @@ public class WareInfoRemember : MonoBehaviour
     #region 기물 정보 저장
 
     [Header("기물 정보")]
-    public GameObject SelectWareInfo;
+    public WareType WType;
+    public bool IsBlack;
 
-    public void SelectWare(WareType _wt, bool isBlack)
+    public void SelectWare(WareType wt, bool isBlack)
     {
-        SelectWareInfo = !isBlack ? WareManager.Instance.WarePrefabs[(int)_wt] : WareManager.Instance.WarePrefabs[(int)_wt + 6];
+        WType = wt;
+        IsBlack = isBlack;
     }
     #endregion
 

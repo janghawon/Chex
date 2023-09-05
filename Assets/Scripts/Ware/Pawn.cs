@@ -11,15 +11,21 @@ public class Pawn : WareBase
     {
         int max = 1;
         if (isFirst)
+        {
             max = 2;
+            isFirst = false;
+        }
+            
 
-        int mark = _currentPos[1] - '0';
+        int mark = CurrentPos[1] - '0';
 
         for(int i = 0; i < max; i++)
         {
+            if (MapManager.Instance.MapDataParent.Find($"{CurrentPos[0]}{mark + i + 1}") == null)
+                continue;
             Transform selectTrm =
-            MapManager.Instance.MapDataParent.Find($"{_currentPos[0]}{mark + i + 1}");
-            _blockMarkSpawner.MarkSpawn(selectTrm, true, selectTrm.name);
+            MapManager.Instance.MapDataParent.Find($"{CurrentPos[0]}{mark + i + 1}");
+            _blockMarkSpawner.MarkSpawn(transform, selectTrm, true, selectTrm.name);
         }
     }
 }

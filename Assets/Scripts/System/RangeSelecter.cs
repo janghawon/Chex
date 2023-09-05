@@ -29,7 +29,7 @@ public class RangeSelecter : MonoBehaviour
     {
         for (int i = 0; i < _maps.Count; i++)
         {
-            _bs.MarkSpawn(_maps[i], false, _maps[i].name);
+            _bs.MarkSpawn(transform, _maps[i], false, _maps[i].name);
         }
     }
 }

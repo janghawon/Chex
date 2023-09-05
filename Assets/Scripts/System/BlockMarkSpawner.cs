@@ -9,19 +9,20 @@ public class BlockMarkSpawner : MonoBehaviour
     [SerializeField] private BlockMark _blockMarkPrefab;
     private BlockMark _selectBlockMark;
     private WareInfoRemember _wInfo;
-    private WareClickObserver _wareCObserver;
+    private ClickObserver _wareCObserver;
 
     private void Awake()
     {
         _wInfo = GameObject.Find("WareCollocateMaster").GetComponent<WareInfoRemember>();
-        _wareCObserver = GameObject.Find("WareClickObserver").GetComponent<WareClickObserver>();
+        _wareCObserver = GameObject.Find("WareClickObserver").GetComponent<ClickObserver>();
     }
 
-    public void MarkSpawn(Transform trm, bool isUsingWare, string mapID)
+    public void MarkSpawn(Transform wareTrans, Transform toMoveTrm, bool isUsingWare, string mapID)
     {
         _selectBlockMark = Instantiate(_blockMarkPrefab);
         _selectBlockMark.MarkingID = mapID;
-        _selectBlockMark.transform.position = new Vector3(trm.position.x, 9.5f, trm.position.z);
+        _selectBlockMark.transform.position = new Vector3(wareTrans.position.x, 10, wareTrans.position.z);
+        _selectBlockMark.transform.DOMove(new Vector3(toMoveTrm.position.x, 10, toMoveTrm.position.z), 0.3f);
 
         _selectBlockMark.MarkCickEvent = null;
         _selectBlockMark.MarkCickEvent += isUsingWare ? MoveWare : SelectCollocationPos;
@@ -31,35 +32,37 @@ public class BlockMarkSpawner : MonoBehaviour
 
     public void RemoveALLBlockMark()
     {
-        int max = _markList.Count;
-        for (int i = 0; i < max; i++)
+        foreach(BlockMark bm in _markList)
         {
-            BlockMark selectMM = _markList[0];
-            _markList.Remove(_markList[0]);
-            Destroy(selectMM);
+            Destroy(bm.gameObject);
         }
+        _markList = new List<BlockMark>();
     }
 
     public void RemoveCanMoveBlockMark(Vector3 wareTrans)
     {
-        int max = _markList.Count;
-        for (int i = 0; i < max; i++)
+        foreach (BlockMark bm in _markList)
         {
-            BlockMark selectMM = _markList[0];
-            _markList.Remove(_markList[0]);
-            selectMM.transform.DOMove(new Vector3(wareTrans.x, 9.5f, wareTrans.z), 0.3f);
-            Destroy(selectMM, 0.3f);
+            bm.transform.DOMove(new Vector3(wareTrans.x, 10, wareTrans.z), 0.3f);
+            Destroy(bm.gameObject, 0.3f);
         }
+        _markList = new List<BlockMark>();
     }
 
     private void MoveWare()
     {
+        Transform trm = _wareCObserver.SelectMark.transform;
+        WareManager.Instance.SelectWare.transform.
+        DOMove(new Vector3(trm.position.x, 10, 
+                           trm.transform.position.z), 0.4f);
+
+        WareManager.Instance.SelectWare.CurrentPos = _wareCObserver.SelectID;
+        WareManager.Instance.SelectWare.LookOutLine(true);
+        WareManager.Instance.SelectWare.isSelected = false;
     }
 
     private void SelectCollocationPos()
     {
-        GameObject ware = Instantiate(_wInfo.SelectWareInfo);
-        Transform trm = MapManager.Instance.MapDatas[_wareCObserver.SelectID];
-        ware.transform.position = new Vector3(trm.position.x, 10,trm.position.z);
+        WareManager.Instance.CreateWare(_wInfo.WType, _wInfo.IsBlack, _wareCObserver.SelectID);
     }
 }
