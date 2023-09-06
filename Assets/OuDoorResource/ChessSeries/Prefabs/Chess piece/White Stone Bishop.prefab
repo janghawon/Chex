@@ -310,10 +310,10 @@ MonoBehaviour:
   _wareType: 3
   _isBlack: 0
   _activeMatArr:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 5863acfd08e87b14a92b98067d7164b0, type: 2}
+  - {fileID: 2100000, guid: 47ccc556e60c1af4ca71ee3df78fdbec, type: 2}
   _removeMatArr:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 5863acfd08e87b14a92b98067d7164b0, type: 2}
   - {fileID: 0}
 --- !u!65 &3521136251985561104
 BoxCollider:
