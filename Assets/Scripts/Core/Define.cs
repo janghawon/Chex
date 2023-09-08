@@ -14,3 +14,8 @@ public enum FXType
     dust = 0
 }
 
+public enum WeaponType
+{
+    RIfle = 0
+}
+

@@ -15,6 +15,11 @@ public class WareManager : ObjectManager
         Instance = this;
     }
 
+    public void ReadyToAttack()
+    {
+        SelectWare.EquipWeapon.IsWaitingAtk = true;
+    }
+
     public void CreateWare(WareType wType, bool isBlack, string ID)
     {
         Transform trm = MapManager.Instance.MapDatas[ID];

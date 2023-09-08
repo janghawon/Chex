@@ -5,6 +5,8 @@ using UnityEngine.Events;
 
 public abstract class WareBase : MonoBehaviour
 {
+    private Transform _weaponSpawnTrm;
+    public WeaponBase EquipWeapon;
     private ClickObserver _wareClickObserver;
     public bool isSelected; 
     public string CurrentPos;
@@ -25,6 +27,8 @@ public abstract class WareBase : MonoBehaviour
     {
         _blockMarkSpawner = GameObject.Find("BlockMarkSpawner").GetComponent<BlockMarkSpawner>();
         _wareClickObserver = GameObject.Find("WareClickObserver").GetComponent<ClickObserver>();
+
+        _weaponSpawnTrm = transform.Find("WeaponTrm");
     }
 
     private void Start()
@@ -34,6 +38,14 @@ public abstract class WareBase : MonoBehaviour
 
         ClickThisWareRemoveEvent += RemoveCanMoveBlock;
         ClickThisWareRemoveEvent += () => LookOutLine(true);
+
+        SetEquipWeapon(WeaponType.RIfle);
+    }
+
+    public void SetEquipWeapon(WeaponType wType)
+    {
+        WeaponManager.Instance.EquipWeapon(wType, _weaponSpawnTrm);
+        
     }
 
     public void ClickEvent()
@@ -50,7 +62,7 @@ public abstract class WareBase : MonoBehaviour
     public void LookOutLine(bool isRemove)
     {
         MeshRenderer _selectMR;
-        for(int i = 0; i < transform.childCount; i++)
+        for(int i = 0; i < transform.childCount-1; i++)
         {
             _selectMR = (MeshRenderer)transform.GetChild(i).GetComponent("MeshRenderer");
             _selectMR.materials = isRemove ? _removeMatArr : _activeMatArr;
