@@ -10,9 +10,12 @@ public class WareManager : ObjectManager
     public List<GameObject> WarePrefabs = new List<GameObject>();
     public List<Sprite> WareSprites = new List<Sprite>();
 
+    public Camera MainCam;
+
     public override void SetInstance()
     {
         Instance = this;
+        MainCam = Camera.main;
     }
 
     public void ReadyToAttack()
