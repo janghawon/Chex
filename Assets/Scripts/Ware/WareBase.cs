@@ -61,17 +61,18 @@ public abstract class WareBase : MonoBehaviour
 
     public void LookOutLine(bool isRemove)
     {
-        MeshRenderer _selectMR;
-        for(int i = 0; i < transform.childCount-1; i++)
+        for(int i = 0; i < transform.childCount; i++)
         {
-            _selectMR = (MeshRenderer)transform.GetChild(i).GetComponent("MeshRenderer");
-            _selectMR.materials = isRemove ? _removeMatArr : _activeMatArr;
+            if(transform.GetChild(i).TryGetComponent<MeshRenderer>(out MeshRenderer m))
+            {
+                m = (MeshRenderer)transform.GetChild(i).GetComponent("MeshRenderer");
+                m.materials = isRemove ? _removeMatArr : _activeMatArr;
+            }
         }
-
     }
     public abstract void LookCanMoveBlock();
 
-    private void RemoveCanMoveBlock()
+    public void RemoveCanMoveBlock()
     {
         _blockMarkSpawner.RemoveCanMoveBlockMark(transform.position);
     }

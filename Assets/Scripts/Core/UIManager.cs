@@ -7,6 +7,7 @@ public class UIManager : ObjectManager
 {
     public static UIManager Instance;
     [SerializeField] private GameObject _wareSelectionGroup;
+    
     public override void SetInstance()
     {
         Instance = this;

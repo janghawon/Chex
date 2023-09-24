@@ -5,12 +5,11 @@ using DG.Tweening;
 
 public class WareManager : ObjectManager
 {
-    public static WareManager Instance;
     public WareBase SelectWare;
     public List<GameObject> WarePrefabs = new List<GameObject>();
     public List<Sprite> WareSprites = new List<Sprite>();
+    public static WareManager Instance;
 
-    
 
     public override void SetInstance()
     {
