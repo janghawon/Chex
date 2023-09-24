@@ -14,5 +14,10 @@ public class AttackBtn : MonoBehaviour
     {
         float yPos = isActive ? _activeLocYPos : _hideLocYPos;
         transform.DOLocalMoveY(yPos, _moveTime);
+        if(!isActive)
+        {
+            ScreenManager.Instance.CanDrag = false;
+            ScreenManager.Instance.MainCam.transform.parent = null;
+        }
     }
 }
