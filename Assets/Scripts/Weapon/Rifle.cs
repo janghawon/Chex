@@ -5,7 +5,6 @@ using UnityEngine;
 public class Rifle : WeaponBase
 {
     [SerializeField] private float _rotSpeed;
-    [SerializeField] private Transform _firePos;
     private LineRenderer _lineRenderer;
 
     private void Awake()

@@ -7,5 +7,6 @@ public class WeaponInfo : ScriptableObject
 {
     public string WeaponName;
     public float AttackValue;
+    public float MaxRange;
     public WeaponBase WeaponPrefab;
 }

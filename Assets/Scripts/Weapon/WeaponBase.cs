@@ -4,10 +4,12 @@ using UnityEngine;
 
 public abstract class WeaponBase : MonoBehaviour
 {
-    [SerializeField] private WeaponInfo _weaponInfo;
+    public WeaponInfo weaponInfo;
+    public Vector3 firePos;
 
-    protected string _name => _weaponInfo.WeaponName;
-    protected float _attackVal => _weaponInfo.AttackValue;
+    protected string _name => weaponInfo.WeaponName;
+    protected float _attackVal => weaponInfo.AttackValue;
+    public float maxRange => weaponInfo.MaxRange;
 
     public bool IsWaitingAtk;
 

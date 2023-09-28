@@ -14,6 +14,7 @@ public class ScreenManager : ObjectManager
     private Vector3 mouseCurrentPosition;
     private Vector3 mouseDelta;
     private float rotationAmount;
+    [SerializeField] private float _rotationSpeed;
 
     [SerializeField] private UnityEvent<bool> _dragEvent;
 
@@ -49,7 +50,7 @@ public class ScreenManager : ObjectManager
             mouseCurrentPosition = Input.mousePosition;
             mouseDelta = mouseCurrentPosition - mouseStartPosition;
 
-            rotationAmount = -mouseDelta.x * 0.1f;
+            rotationAmount = -mouseDelta.x * _rotationSpeed;
 
             WareManager.Instance.SelectWare.transform.Rotate(Vector3.up, rotationAmount, Space.World);
 
